@@ -4,123 +4,226 @@
 
 
 body{
-font-family: "Noto Sans JP","sans-serif";
-margin: 0%;
-min-width: 1076px;
-
-}
-
-.color-purple{
-
-    color: blueviolet;
-}
-
-.sub-title{
-
-   font-size: 32px;
-
-
-}
-
-
-
-/*
-*headerのスタイルシート
-
-
-*/
-
-.block-header{
-margin: 10px 0px;
-padding: 0 20px 10px;
-box-shadow: 0 10px 10px -5px rgba(204,204,204, 0.3);
-
-
-}
-
-
-.block-header a{
-
-font-size: 20px;
-color: #33B1A2;
-text-decoration: none;
-letter-spacing: 1px;
-
-
-}
-
-
-/*
-*mainメインのスタイルシート
-*/
-
-.block-main{
-
-text-align: center;
-margin: 100px 0px;
-
-
-}
-
-/*
-*profileのスタイルシート
-*/
-
-.item-list{
-
-  width: 100%;
-  max-width: 348px;
-  margin: 0 auto;
-
-
-}
-/*
-*ドット〇〇と書いたクラスにスペースを空けてPタグの表記を追加するとそのタグに対しての指示が出せる
-*/
-
-.item-list b{
-
-display: block;
-font-size: 24px;
-font-weight: normal;
-margin: 20px 0  30px;
-}
-
-.item-list p{
-
-    font-size: 15px;
-    line-height: normal;
-    text-align: left;
+    font-family: "Noto Sans JP","sans-serif";
+    margin: 0%;
+    min-width: 1076px;
     
     }
-/*
-*ディスプレイ０、ジャスティファイをセンター、アラインアイテムセンターで中央よせを実現パディング０はデフォルトでレフトが適用されているのを０で寄せている。
-*/
-.icon-list{
-  list-style: none;
-  width: 100px;
-  max-width: 247px;
-  margin: 30px auto;
- padding: 0;
- display: flex;
- justify-content: center;
-align-items: center;
+    
+    .color-purple{
+    
+        color: blueviolet;
+    }
+    
+    .sub-title{
+    
+       font-size: 32px;
+    
+    
+    }
+    
+    
+    
+    /*
+    *headerのスタイルシート
+    
+    
+    */
+    
+    .block-header{
+    margin: 10px 0px;
+    padding: 0 20px 10px;
+    box-shadow: 0 10px 10px -5px rgba(204,204,204, 0.3);
+    
+    
+    }
+    
+    
+    .block-header a{
+    
+    font-size: 20px;
+    color: #33B1A2;
+    text-decoration: none;
+    letter-spacing: 1px;
+    
+    
+    }
+    
+    
+    /*
+    *mainメインのスタイルシート
+    */
+    
+    .block-main{
+    
+    text-align: center;
+    margin: 100px 0px;
+    
+    
+    }
+    
+    /*
+    *profileのスタイルシート
+    */
+    
+    .item-list{
+    
+      width: 100%;
+      max-width: 348px;
+      margin: 0 auto;
+    
+    
+    }
+    /*
+    *ドット〇〇と書いたクラスにスペースを空けてPタグの表記を追加するとそのタグに対しての指示が出せる
+    */
+    
+    .item-list b{
+    
+    display: block;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 20px 0  30px;
+    }
+    
+    .item-list p{
+    
+        font-size: 15px;
+        line-height: normal;
+        text-align: left;
+        
+        }
+    /*
+    *ディスプレイ０、ジャスティファイをセンター、アラインアイテムセンターで中央よせを実現パディング０はデフォルトでレフトが適用されているのを０で寄せている。
+    */
+    .icon-list{
+      list-style: none;
+      width: 100px;
+      max-width: 247px;
+      margin: 30px auto;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+    align-items: center;
+    
+    }
+    
+    /*
+    *アイコンの隙間を作るためにマージンライトを使うが、２つ目のアイコンは右にずれなくていい。そのときはlastchildを使う。意味は最後の子要素に対して直接指定する。
+    */
+    .icon-list li{
+        margin-right: 22px;
+    
+    
+    }
+    
+    .icon-list li:last-child{
+    
+        margin-right: 0px;
+    
+    }
+    
+    
+    /*
+    *[works]スタイルシート
+    */
+    
+    .box-works{
+     margin: 80px 0 0;
+    
+    
+    }
+    
+    /*
+    *リストスタイルNONEはULタグの点を削除した。今上の部分でセンターに寄せているのでテキストアラインで左寄せに指定。
+    */
+
+    .works-list{
+       list-style: none;
+       width: 100%;
+       max-width: 1076px;
+       margin: 30px auto;
+       padding: 0;
+       text-align: left;
+       overflow: hidden;
+    
+    
+    }
+    /*
+    *画像の幅を３４８PXにする。高さはそれに合わせての高さになっているさらに左から横並びのデザインなのでフロートでインライン要素にする。わずかに幅があるのでマージンで幅を作る。
+    */
+    .works-list li{
+        display: block;
+        width: 100%;
+        max-width: 348px;
+        float: left;
+        margin-right: 15px;
+    　　 
+    }
+    /*
+    *横並びにしたときに全てにマージンライトが適用されて、最後の画像が下にずれ込むので、最後のLiのみマージンを０指定
+    */
+    .works-list li:last-child{
+        margin-right: 0
+;
+
+
+    }
+
+    
+    /*
+    *
+    */
+    .works-list li img{
+        width: 100%;
+        border: 1px solid #cccccc;
+    
+    }
+    
+　.works-list li h3{
+
+  font-size: 24px;
+  margin: 10px 0;
+  
+}
+
+.works-list li span{
+   font-size: 18px;
+
+
+
+
+}
+
+.works-list li .link{
+     display: flex;
+     justify-content: left;
+     align-items: left;
+     margin-top: 15px;
+
+
+}
+
+.works-list li .link a{
+
+  background-color:  rgb(226, 226, 226);
+ padding: 5px 20px;
+ margin-right: 10px;
+ font-size: 15px;
+text-decoration: none;
+color: black;
 
 }
 
 /*
-*アイコンの隙間を作るためにマージンライトを使うが、２つ目のアイコンは右にずれなくていい。そのときはlastchildを使う。意味は最後の子要素に対して直接指定する。
+*フッターのスタイルシート
 */
-.icon-list li{
-    margin-right: 22px;
 
-
-}
-
-.icon-list li:last-child{
-
-    margin-right: 0px;
+.block-footer p{
+clear: both;
+ text-align: center;
+font-size: 15px;
+margin: 50px 0 20px;
 
 }
-
 
