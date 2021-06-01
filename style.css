@@ -3,12 +3,10 @@
 */
 
 
-
 body{
 font-family: "Noto Sans JP","sans-serif";
 margin: 0%;
 min-width: 1076px;
-color: #33B1A2;
 
 }
 
@@ -17,6 +15,12 @@ color: #33B1A2;
     color: blueviolet;
 }
 
+.sub-title{
+
+   font-size: 32px;
+
+
+}
 
 
 
@@ -38,10 +42,84 @@ box-shadow: 0 10px 10px -5px rgba(204,204,204, 0.3);
 .block-header a{
 
 font-size: 20px;
-color: black;
+color: #33B1A2;
 text-decoration: none;
 letter-spacing: 1px;
 
+
+}
+
+
+/*
+*mainメインのスタイルシート
+*/
+
+.block-main{
+
+text-align: center;
+margin: 100px 0px;
+
+
+}
+
+/*
+*profileのスタイルシート
+*/
+
+.item-list{
+
+  width: 100%;
+  max-width: 348px;
+  margin: 0 auto;
+
+
+}
+/*
+*ドット〇〇と書いたクラスにスペースを空けてPタグの表記を追加するとそのタグに対しての指示が出せる
+*/
+
+.item-list b{
+
+display: block;
+font-size: 24px;
+font-weight: normal;
+margin: 20px 0  30px;
+}
+
+.item-list p{
+
+    font-size: 15px;
+    line-height: normal;
+    text-align: left;
+    
+    }
+/*
+*ディスプレイ０、ジャスティファイをセンター、アラインアイテムセンターで中央よせを実現パディング０はデフォルトでレフトが適用されているのを０で寄せている。
+*/
+.icon-list{
+  list-style: none;
+  width: 100px;
+  max-width: 247px;
+  margin: 30px auto;
+ padding: 0;
+ display: flex;
+ justify-content: center;
+align-items: center;
+
+}
+
+/*
+*アイコンの隙間を作るためにマージンライトを使うが、２つ目のアイコンは右にずれなくていい。そのときはlastchildを使う。意味は最後の子要素に対して直接指定する。
+*/
+.icon-list li{
+    margin-right: 22px;
+
+
+}
+
+.icon-list li:last-child{
+
+    margin-right: 0px;
 
 }
 
