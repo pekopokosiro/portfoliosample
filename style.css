@@ -158,12 +158,13 @@ body{
         max-width: 348px;
         float: left;
         margin-right: 15px;
-    　　 
     }
+
+
     /*
     *横並びにしたときに全てにマージンライトが適用されて、最後の画像が下にずれ込むので、最後のLiのみマージンを０指定
     */
-    .works-list li:last-child{
+    .works-list li:last-child {
         margin-right: 0
 ;
 
@@ -338,7 +339,6 @@ color:red
 
 
 
-  }
+  
 
-}
     
